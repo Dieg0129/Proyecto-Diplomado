@@ -1,0 +1,228 @@
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px; /* Aumentamos el padding para hacer las celdas más espaciadas */
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50; /* Color de fondo para las celdas de encabezado */
+    color: white; /* Color del texto en las celdas de encabezado */
+}
+
+td {
+    background-color: #f2f2f2; /* Color de fondo para las celdas de datos */
+}
+
+/* Estilos para las celdas impares */
+tr:nth-child(odd) {
+    background-color: #dddddd; /* Color de fondo para las filas impares */
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+  font-family: system-ui;
+}
+.center {
+    position: relative;
+    padding: 50px; /* Reducido para evitar que el contenido se oculte */
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    width: 550px;
+    height: 700px;
+    align-items: center;
+    
+    
+}
+
+.center .inputbox input {
+    width: 100%; /* Cambiado a 100% para que el input ocupe todo el ancho disponible */
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.center .inputbox span {
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+    color: #888;
+    text-align: center;
+    width: 100%; /* Cambiado a 100% para que el span ocupe todo el ancho disponible */
+}
+
+.center .inputbox label {
+    display: block; /* Convertimos los labels en bloques para ocupar todo el ancho disponible */
+    text-align: center; /* Centramos el texto horizontalmente */
+    padding-bottom: 5px;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+input.enviar, input.reset, a.regresar {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 25px !important;
+    padding: 15px 30px; /* Espaciado interno */
+    border: 2px solid #4CAF50; /* Borde sólido */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Sombra */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+input.enviar:hover, input.reset:hover, a.regresar:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+    border-color: #45a049;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Desplazamiento hacia arriba */
+}
+
+
+
+.center .button-container {
+    display: flex;
+    justify-content: center; /* Cambiamos de 'flex-end' a 'center' para centrar los elementos */
+    margin-top: 30px !important;
+    padding-bottom: 30px;
+}
+
+
+a.regresar {
+    margin-left: 30px; /* Ajustamos el margen izquierdo del botón "Regresar" para separarlo del borde derecho */
+}
+
+
+input.enviar, input.reset, a.regresar:hover {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 25px !important;
+    width: auto !important;
+}
+
+/*Estilos tabla*/
+
+.resultados {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.resultado {
+    display: table-row;
+}
+
+.etiqueta, .valor {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #000;
+}
+
+.etiqueta {
+    font-weight: bold;
+}
+
+.valor {
+    text-align: right;
+}
+
+.resultados{
+    width: 500px;
+    margin-bottom: 15px;
+}
+
+.resultado {
+    display: table-row;
+    border: 2px solid #000; /* Añadimos un borde más grueso */
+    border-radius: 8px; /* Opcional: Añadimos bordes redondeados */
+    margin-bottom: 10px; /* Espacio entre cada resultado */
+}
+
+/* Estilos para la tabla */
+.resultados {
+    width: 60%; /* Ajustamos el ancho de la tabla al 100% */
+}
+
+.resultado {
+    display: table-row;
+}
+
+.etiqueta1, .valor {
+    display: table-cell;
+    padding: 12px; /* Aumentamos el padding para hacer las celdas más espaciadas */
+    text-align: left;
+    border: 1px solid #000; /* Añadimos borde a las celdas */
+}
+
+.etiqueta1 {
+    font-weight: bold;
+    background-color: #4CAF50; /* Color de fondo para las celdas de encabezado */
+    color: #ffffff; /* Color del texto en las celdas de encabezado */
+}
+
+/*Etiqueta dos*/
+
+.etiqueta2, .valor {
+    display: table-cell;
+    padding: 12px; /* Aumentamos el padding para hacer las celdas más espaciadas */
+    text-align: left;
+    border: 1px solid #000; /* Añadimos borde a las celdas */
+}
+
+.etiqueta2 {
+    font-weight: bold;
+    background-color: #4CAF50; /* Color de fondo para las celdas de encabezado */
+    color: whi; /* Color del texto en las celdas de encabezado */
+}
+
+.valor {
+    background-color: #f2f2f2; /* Color de fondo para las celdas de datos */
+}
+
+/* Estilos para las filas impares */
+.resultado:nth-child(odd) .etiqueta,
+.resultado:nth-child(odd) .valor {
+    background-color: #dddddd; /* Color de fondo para las filas impares */
+}
+
+
+
+
+
+

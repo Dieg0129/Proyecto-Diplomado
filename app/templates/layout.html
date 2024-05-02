@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} </title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/menu.css')}}">
+    
+    <link rel="icon" href="../static/icons/icono_pestaña.png">
+</head>
+<body class="custom-background">
+    {% block body %} 
+    {% endblock %}
+
+    <script src="{{url_for('static', filename= 'js/validar.js')}}"> </script>
+    
+</body>
+</html> 

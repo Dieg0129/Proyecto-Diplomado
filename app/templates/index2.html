@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfica</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/style.css')}}">
+    <link rel="icon" href="../static/icons/icono_pestaña.png">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">INICIO</a></li>
+                <li><a href="{{ url_for('index2') }}">GRÁFICA</a></li>
+                <li><a href="https://wa.me/+573005347595/?text=Estoy interesado en obtener mayor información." target="_blank">CONTACTO</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <!-- Establece el ancho y alto del canvas sin unidades -->
+    <div class="caja">
+        <canvas id="grafica" width="700" height="750"></canvas>
+    </div>
+    
+    
+    <script src="{{url_for('static', filename= 'js/script.js')}}"> </script>
+</body>
+
+</html>

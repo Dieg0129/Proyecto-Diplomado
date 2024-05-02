@@ -1,0 +1,24 @@
+.caja {
+    color: blue; /* Color de texto azul */
+    font-size: 20px; /* Tamaño de fuente 20px */
+    font-weight: bold; /* Texto en negrita */
+    width: 700px; /* Tamaño del ancho del canvas */
+    height:750px; /* Tamaño de la altura del canvas */
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+    margin-top: 50px;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+    font-family: system-ui;
+  }

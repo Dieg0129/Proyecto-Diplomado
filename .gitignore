@@ -1,0 +1,13 @@
+# Ignorar archivos de entorno virtual de Python
+venv/
+*.pyc
+
+# Ignorar archivos de caché y archivos compilados
+__pycache__/
+
+# Ignorar archivos de configuración locales
+.vscode/
+
+# Si estás usando pipenv para manejar el entorno virtual
+Pipfile
+Pipfile.lock

@@ -1,0 +1,58 @@
+{% extends './layout.html' %}
+
+{% block title %} {{data.titulo}} {% endblock %} 
+
+{% block body %} 
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="login-container">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">INICIO</a></li>
+                <li><a href="{{ url_for('index2') }}">GRÁFICA</a></li>
+                <li><a href="https://wa.me/+573005347595/?text=Estoy interesado en obtener mayor información." target="_blank">CONTACTO</a></li> 
+            </ul>
+        </nav>
+    </header>
+    
+
+
+    <div class="login-info-container">
+            <h1 class="title">{{data.bienvenida}}</h1>
+        <form class="inputs-container" action="{{ url_for('promedio') }}" method="post">
+            <input class="input" type="text" placeholder="Lectura Crítica" id="formulario3" name="formulario3"  required>
+            <input class="input" type="text" placeholder="Matemáticas" id="formulario2" name="formulario2" required>
+            <input class="input" type="text" placeholder="Sociales y Ciudadanas" id="formulario1" name="formulario1" required>
+            <input class="input" type="text" placeholder="Ciencias Naturales" id="formulario5" name="formulario5" required>
+            <input class="input" type="text" placeholder="Inglés" id="formulario4" name="formulario4" required>
+            <input class="input" type="text" placeholder="Puntaje Global" id="formulario6" name="formulario6" required> 
+
+            <div class="social-login">
+                <div>
+                    <button  class="social-login-element" id="enviarButton" type="submit" value="Enviar">Enviar</button>
+                </div>
+                <div>
+                    <button  class="social-login-element" id="cancelarButton" type="reset" value="Cancelar">Cancelar</button>
+                </div>
+            </div>
+
+        </form>
+
+
+    </div>
+
+    <img class="image-container" src="../static/images/img-container.png" alt="Imagen referente">
+
+</div>
+    
+    <script src="{{url_for('static', filename= 'js/validar.js')}}"> </script>
+
+</div>
+    
+{% endblock %}
+
+    
